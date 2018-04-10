@@ -1,0 +1,158 @@
+body {
+    background: #332C20;
+    font: 100% Arial, Helvetica, sans-serif;
+    min-width: 1200px;
+}
+
+.valid
+{
+    border: 1px solid lightgray;
+}
+.error
+{
+    border: 1px solid red;
+}
+
+#panelWheel {
+    float: left;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+label, input, .radio-group,.dropbtn, .dropdown-content {
+    transition: all 0.5s;
+}
+
+#panelDisplay {
+    float: left;
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    width: 300px;
+    position: relative;
+    top: 300px;
+    left: -300px;
+}
+
+#currentCash {
+    color: #74bb3a;
+}
+
+#moneybag {
+    height: auto;
+    width: 70px;
+    margin: 0 auto;
+}
+
+#panelOptions {
+    float: left;
+    background: #D6B588;
+    width: 250px;
+    height: auto;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    top: 100px;
+    border: ridge black 3px;
+}
+
+input[type=text] {
+    background: #D6B588;
+    color: white;
+    width: 60%;
+    height: 25px;
+    font-size: 20px;
+}
+
+input[type=radio] {
+    visibility: hidden;
+    display: none;
+}
+
+input[type=radio]:checked + label{
+    color: #c2c2c2;
+    background: #2b2b2b;
+}
+
+.radio-group label + input[type=radio] + label {
+    border-left: solid 3px #2b2b2b;
+}
+
+.radio-group label {
+    color: #3c3f41;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+.radio-group {
+    border: solid 3px #2b2b2b;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #74bb3a;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /*min-width: 160px;*/
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+}
+
+.dropdown-content label {
+    color: #74bb3a;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 0;
+    width: 100%;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content label:hover {
+    background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #5a9125;
+}
+
+.dropdown-content input[type=radio]:checked + label{
+    color: #c2c2c2;
+    background: #2b2b2b;
+}
+
+figure {
+cursor: pointer;
+}
+

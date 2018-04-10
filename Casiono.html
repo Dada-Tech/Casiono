@@ -1,0 +1,32 @@
+<!doctype html>
+<!--
+David Dada
+Casino Simulator
+-->
+<html>
+
+<head>
+    <title>Casino Bet Simulator</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        function serverCalculate(event) {
+            event.preventDefault();
+
+            if (!verifyInput(bet)) {
+                return;
+            }
+
+            var urlString = "http://localhost:8888/Casiono/Casiono.php?"+$("#formOptions").serialize()+"&cash="+cash.innerHTML+"&spin="+spin.innerHTML+"&win="+win.innerHTML+"&lose="+lose.innerHTML;
+            xh.open("POST", urlString, true);
+            xh.send(null);
+        }
+    </script>
+    <link rel="stylesheet" href="Casiono.css">
+    <link rel="script" href="Casiono.php">
+</head>
+
+<body>
+<script src="Casiono.js"></script>
+<noscript>Please enable JavaScript</noscript>
+</body>
+</html>
