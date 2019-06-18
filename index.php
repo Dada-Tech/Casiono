@@ -1,9 +1,4 @@
-<?php
-	function Redirect($url, $permanent = false) {
-    header('Location: ' . $url, true, $permanent ? 301 : 302);
-    exit();
-}
+<?php include_once("Casiono.html"); ?>
 
-Redirect('Casiono.html', false);
 
-?>
+

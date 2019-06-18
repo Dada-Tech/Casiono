@@ -143,7 +143,7 @@ input[type=radio]:checked + label{
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
+.dropbtn:hover{
     background-color: #5a9125;
 }
 
