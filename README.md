@@ -16,10 +16,13 @@ Simple simulator over 1,10 or 100 bets.
 - CASH_ADD - how much more cash to "top up" wallet when you need to. Default:100;
 - CASH_DEFAULT - how much cash you start with. Default:300;
 
-# Betting Strategies
-## ON WIN/LOSS
-how you will change your bet each win and or loss.
-can stay the same, double or halve your bet
+# ON WIN/LOSS
+how you will change your bet each win and or loss per spin.
+
+### Examples:
+- ONWIN = 0.5; when you bet 10 and win, the next bet will be 5
+- ONLOSE = 2; when you bet 10 and lose, the next bet will be 20
+- ONWIN = 1; when you bet 10 and win, the next bet will be 10
 
 # Rand
 it uses system rand
