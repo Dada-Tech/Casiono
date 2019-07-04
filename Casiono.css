@@ -73,20 +73,11 @@ input[type=radio] {
 }
 
 input[type=radio]:checked + label{
-    color: #c2c2c2;
-    background: #2b2b2b;
+    color: #74bb3a;
 }
 
 .radio-group label + input[type=radio] + label {
     border-left: solid 3px #2b2b2b;
-}
-
-.radio-group label {
-    color: #3c3f41;
-    display: inline-block;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 5px 20px;
 }
 
 .radio-group {
@@ -94,6 +85,13 @@ input[type=radio]:checked + label{
     display: inline-block;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.radio-group label {
+    color: #3c3f41;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
 }
 
 /* Dropdown Button */

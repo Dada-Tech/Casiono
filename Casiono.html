@@ -3,16 +3,77 @@
 David Dada
 Casino Simulator
 -->
-<html>
+<html lang="en">
 
 <head>
     <title>Casino Bet Simulator</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="Casiono.css">
-    <link rel="script" href="Casiono.php">
 </head>
 
 <body>
+<figure id='panelWheel'>
+    <img title='click me to spin!' alt="spin wheel" src='Resources/wheel1.png'/>
+</figure>
+
+<div id='panelOptions'>
+    <form id='formOptions'>
+
+        <div class='dropdown'>
+            <button class='dropbtn'>on win</button>
+            <div class='dropdown-content'>
+                <input type='radio' id='option-1win' name='onWinButton' value='0'>
+                <label for='option-1win'>stop</label>
+                <input type='radio' id='option-2win' name='onWinButton' value='0.5'>
+                <label for='option-2win'>50%</label>
+                <input type='radio' id='option-3win' name='onWinButton' value='1' checked>
+                <label for='option-3win'>100%</label>
+                <input type='radio' id='option-4win' name='onWinButton' value='2'>
+                <label for='option-4win'>200%</label>
+            </div>
+        </div>
+
+        <div class='dropdown'>
+            <button class='dropbtn'>on loss</button>
+            <div class='dropdown-content'>
+                <input type='radio' id='option-1loss' name='onLoseButton' value='0'>
+                <label for='option-1loss'>stop</label>
+                <input type='radio' id='option-2loss' name='onLoseButton' value='0.5'>
+                <label for='option-2loss'>50%</label>
+                <input type='radio' id='option-3loss' name='onLoseButton' value='1' checked>
+                <label for='option-3loss'>100%</label>
+                <input type='radio' id='option-4loss' name='onLoseButton' value='2'>
+                <label for='option-4loss'>200%</label>
+            </div>
+        </div>
+
+        <input type='button' id='resetButton' class='dropbtn' value='reset'/>
+
+        <div class='radio-group'>
+            <input type='radio' id='option-one' name='loopSelector' value='1' checked>
+            <label for='option-one'>1x</label>
+            <input type='radio' id='option-two' name='loopSelector' value='10'>
+            <label for='option-two'>10x</label>
+            <input type='radio' id='option-three' name='loopSelector' value='50'>
+            <label for='option-three'>50x</label>
+        </div>
+
+        <input class='fine' id='betAmount' name='betAmount' type='text' value='0' placeholder='Bet Amount:'>
+
+    </form>
+</div>
+
+
+<div id='panelDisplay'>
+    <div id='currentCash'>$<span id='cash'>0</span></div>
+    <figure id='moneybag'>
+        <img title='click me to add cash' alt='click to reset' src='Resources/moneybag.png'/>
+    </figure>
+
+    <div id='spinCount'>Spin: <span id='spin'>0</span> Win: <span id='win'>0</span> Lose: <span id='lose'>0</span></div>
+</div>
+
+
 <script src="Casiono.js"></script>
 <noscript>Please enable JavaScript</noscript>
 </body>
