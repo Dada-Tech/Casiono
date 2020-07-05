@@ -1,3 +1,9 @@
+# Build
+Open the Casiono.html in browser.
+
+the index.php file is just used for hosting on heroku
+
+
 # Casiono
 Roulette Table Simulator for Red/Black, High/Low, anything with the ~48% probability to test the  strategies eg. Martingale Strategy
 
